@@ -1,0 +1,13 @@
+// Find for each customer and product minimum sales quantity in month of January
+// and maximum sales quantity for the month of December
+
+select_attribute:
+cust, prod, 1_min_quant, 2_max_quant
+no_gv:
+2
+grouping_attributes:
+cust, prod
+fvect:
+1_min_quant, 2_max_quant
+select_condition:
+1_month=1, 2_month=12
